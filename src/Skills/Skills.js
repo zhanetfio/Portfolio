@@ -12,7 +12,6 @@ const Skills = () => {
 <Skill title='JS' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>
 <Skill  title='CSS' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>
 <Skill  title='React' description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. "/>
-
                 </div>
             </div>
         </div>
