@@ -12,6 +12,9 @@ const Projects = () => {
                 <div className={style.projects}>
                     <Project title='Social Network' description="Short description about project..."/>
                     <Project title='To Do List' description="Short description about project..."/>
+                    <Project title='To Do List' description="Short description about project..."/>
+                    <Project title='To Do List' description="Short description about project..."/>
+                    <Project title='To Do List' description="Short description about project..."/>
                 </div>
             </div>
 
