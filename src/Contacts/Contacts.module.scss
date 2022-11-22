@@ -1,0 +1,217 @@
+.contactsBlock {
+  background-color: #1c0e0e;
+
+  .section {
+    height: 150px;
+    background: linear-gradient(to bottom left, #fff, #fff 50%, transparent 50%, transparent);
+  }
+
+  .contactsContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .title {
+      margin: 0 0 30px;
+      font-size: 44px;
+      font-family: "Train One", cursive;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .separator {
+      position: relative;
+      width: 12px;
+      height: 12px;
+      margin: 0px auto;
+      border-radius: 50%;
+      background: #ffffff;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 70px;
+        height: 2px;
+        margin: 4px 0 0 -35px;
+        border: 1px solid #ffffff;
+        border-left: none;
+        border-right: none;
+      }
+    }
+
+    .infoBlock {
+      box-sizing: border-box;
+      margin: 5px;
+      width: 250px;
+      display: flex;
+      flex-direction: row;
+
+      align-items: center;
+      text-align: center;
+
+      .infoBlockItem {
+        width: 31.3333333333%;
+        border-left-width: 0;
+        padding: 0 0%;
+        margin-left: 3%;
+
+        .infoItem {
+          position: relative;
+          display: inline-block;
+          width: 70px;
+          height: 70px;
+          margin: 30px 30px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          font-size: 1.4285714286em;
+          line-height: 70px;
+          text-align: center;
+          color: #000;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 65px;
+            height: 65px;
+            box-sizing: border-box;
+            border: 6px double;
+            transition: 0.3s;
+            transform: translate(-50%, -50%) rotate(45deg);
+          }
+        }
+
+        .img {
+          position: relative;
+          display: inline;
+          border-radius: 50%;
+          box-sizing: border-box;
+          font-size: 1.4285714286em;
+          line-height: 70px;
+          text-align: center;
+          color: #ffffff;
+        }
+
+        .infoItem a {
+          text-decoration: none;
+          font-size: 14px;
+          color: #ffffff
+
+        }
+      }
+    }
+  }
+
+  .contactsForm {
+    width: 880px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+  }
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+  .inputField input {
+    margin:0 10px;
+    padding: 20px;
+    width: 400px;
+    border-bottom-color: #ffffff;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: double;
+    border-bottom-width: thick;
+    background-color: #1c0e0e;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Roboto Mono", serif;
+    box-sizing: border-box;
+    outline: none;
+
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -12px;
+      bottom: -4px;
+      width: 12px;
+      height: 12px;
+      margin: -6px 0 0;
+      border-radius: 50%;
+      transition: 0.3s;
+      background-color: #ffffff;
+    }
+
+  }
+
+  .textForm {
+    margin:0 10px;
+    padding-top: 20px;
+    width:100%;
+    border-bottom-color: #ffffff;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: double;
+    border-bottom-width: thick;
+    background-color: #1c0e0e;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Roboto Mono", serif;
+    outline: none;
+
+  }
+
+}
+
+.btn {
+  margin: 30px 0px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-size: 1em;
+  line-height: 1;
+  font-family: "Roboto Mono", serif;
+  color: #ffffff;
+  border: 4px double #d56d71;
+  border-radius: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 35px;
+  background: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d56d71;
+  }
+}
+
+.section1 {
+  height: 150px;
+  background: linear-gradient(to bottom left, transparent, transparent 50%, #ebe5d9 50%, #ebe5d9);
+}
+
+
+
+
+
+
+
+
+

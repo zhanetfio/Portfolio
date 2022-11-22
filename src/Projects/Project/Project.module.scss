@@ -1,0 +1,35 @@
+.project {
+  margin: 5px;
+  width: 250px;
+  background-color: #d56d71;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .imgContainer {
+    width: 100%;
+    height: 200px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button {
+      background-color: gold;
+      height: 25px;
+      width: 100px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
+
+.title {
+  font-family: 'Nothing You Could Do', cursive;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Roboto Mono', monospace;
+}

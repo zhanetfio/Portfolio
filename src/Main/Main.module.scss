@@ -1,0 +1,35 @@
+.mainBlock {
+  min-height: 100vh;
+  background-color: #1c0e0e;
+
+  .intro {
+    width: 360px;
+
+    .name {
+      font-family: 'Nothing You Could Do', cursive;
+      color: #d56d71;
+    }
+
+    .prof {
+      padding-top: 10px;
+      font-family: 'Train One', cursive;
+      font-size: 48px;
+      color: #fff;
+      letter-spacing: 10px;
+    }
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+    background-color: wheat;
+  }
+
+  .section {
+    height: 150px;
+    background: linear-gradient(to bottom right, transparent, transparent 50%, #ebe5d9 50%, #ebe5d9);
+  }
+}
+
+
+

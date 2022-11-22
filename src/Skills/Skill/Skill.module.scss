@@ -1,0 +1,46 @@
+.skill {
+  margin: 5px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .icon {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 30px 30px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 1.4285714286em;
+    line-height: 70px;
+    text-align: center;
+    color: #000;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 65px;
+      height: 65px;
+      box-sizing: border-box;
+      border: 6px double;
+      transition: 0.3s;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+
+  .iconTitle {
+
+    font-family: 'Nothing You Could Do', cursive;
+
+  }
+
+  .description {
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+

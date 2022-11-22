@@ -1,0 +1,48 @@
+.skillsBlock {
+    min-height: 100vh;
+    background-color: #ebe5d9;
+
+    .skillsContainer {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        .title {
+            margin: 0 0 30px;
+            font-size: 36px;
+            font-family: "Train One", cursive;
+            letter-spacing: 10px;
+        }
+        .separator{
+            position: relative;
+            width: 12px;
+            height: 12px;
+            margin: 0px auto;
+            border-radius: 50%;
+            background: #000;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                width: 70px;
+                height: 2px;
+                margin: 4px 0 0 -35px;
+                border: 1px solid;
+                border-left: none;
+                border-right: none;
+            }
+        }
+        .skills {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+    .section{
+        height: 150px;
+        background: linear-gradient(to bottom right, transparent, transparent 50%, #fff 50%, #fff);
+    }
+}
+
+
+

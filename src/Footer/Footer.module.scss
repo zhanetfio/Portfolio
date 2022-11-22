@@ -1,0 +1,39 @@
+.footerBlock {
+  background-color: #ebe5d9;
+
+  .footerContainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title {
+    margin: 0 0 30px;
+    font-family: 'Nothing You Could Do', cursive;
+  }
+
+  .socialContainer {
+    width: 290px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .social img {
+    margin: 2px;
+    height: 36px;
+    width: 36px;
+    border-radius: 20px;
+
+    &:hover {
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+
+
+    }
+  }
+}
