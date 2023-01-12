@@ -5,11 +5,13 @@ import phone from "../assets/image/icons/phone-svgrepo-com .svg";
 import email from "../assets/image/icons/email-svgrepo-com.svg"
 
 const Contacts = () => {
+
+
     return (
-        <div className={style.contactsBlock}>
+        <div className={style.contactsBlock} >
             <div className={style.section}></div>
             <div className={` ${style.contactsContainer}`}>
-                <h3 className={style.title}>CONTACTS</h3>
+                <h3 id={'contacts'} className={style.title}>CONTACTS</h3>
                 <div className={style.separator}></div>
                 {/*<div className={style.infoBlock}>*/}
                 {/*    <div className={style.infoBlockItem}>*/}
@@ -48,7 +50,7 @@ const Contacts = () => {
                         <textarea className={style.textForm} placeholder="Your message"></textarea>
                     </div>
                 </form>
-                <button className={style.btn}>SEND</button>
+                <button type="submit" className={style.btn}>SEND</button>
             </div>
             <div className={style.section1}></div>
 

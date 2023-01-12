@@ -5,10 +5,10 @@ import style from './Nav.module.scss'
 const Nav = () => {
     return (
         <div className={style.nav}>
-            <a href="" className={style.item}>Main</a>
-            <a href=""  className={style.item}>Skills</a>
-            <a href=""  className={style.item}>Projects</a>
-            <a href=""  className={style.item}>Contacts</a>
+            <a href="#main" className={style.item}>MAIN</a>
+            <a href="#skills"  className={style.item}>SKILLS</a>
+            <a href="#projects"  className={style.item}>PROJECTS</a>
+            <a href="#contacts"  className={style.item}>CONTACTS</a>
         </div>
     );
 };

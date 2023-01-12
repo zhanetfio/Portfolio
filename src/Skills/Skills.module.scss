@@ -1,6 +1,9 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
+
 .skillsBlock {
     min-height: 100vh;
-    background-color: #ebe5d9;
+    background-color: $bgdColor1;
 
     .skillsContainer {
         align-items: center;
@@ -8,8 +11,7 @@
         justify-content: flex-start;
         .title {
             margin: 0 0 30px;
-            font-size: 36px;
-            font-family: "Train One", cursive;
+            @include text($fontFamily2,36px,#000);
             letter-spacing: 10px;
         }
         .separator{
@@ -18,7 +20,7 @@
             height: 12px;
             margin: 0px auto;
             border-radius: 50%;
-            background: #000;
+            background:$bgdColor5;
             &::before {
                 content: '';
                 position: absolute;
@@ -36,11 +38,14 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            @media screen and (max-width: 649px){
+                justify-content: center;
+            }
         }
     }
     .section{
         height: 150px;
-        background: linear-gradient(to bottom right, transparent, transparent 50%, #fff 50%, #fff);
+        background: linear-gradient(to bottom right, transparent, transparent 50%, $bgdColor4 50%, $bgdColor4);
     }
 }
 

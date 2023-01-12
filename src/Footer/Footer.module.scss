@@ -1,5 +1,8 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
+
 .footerBlock {
-  background-color: #ebe5d9;
+  background-color: $bgdColor1;
 
   .footerContainer {
     width: 80%;
@@ -11,15 +14,14 @@
   }
 
   .title {
-    margin: 0 0 30px;
-    font-family: 'Nothing You Could Do', cursive;
+    margin: 0 0 20px;
+    @include text($fontFamily3, 18px, #000);
   }
 
   .socialContainer {
     width: 290px;
     display: flex;
     justify-content: center;
-
   }
 
   .social img {
@@ -32,8 +34,6 @@
       height: 40px;
       width: 40px;
       cursor: pointer;
-
-
     }
   }
 }

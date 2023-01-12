@@ -1,7 +1,15 @@
+@import "src/common/styles/variables";
+
 .header {
-    height: 80px;
-    background-color: #1c0e0e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 80px;
+  background-color:$bgdColor2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  /*  @media screen and (max-width: 882px) {
+     width: auto;
+    }*/
 }

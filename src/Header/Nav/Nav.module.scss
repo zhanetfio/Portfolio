@@ -1,13 +1,17 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
 .nav {
-  border: 1px solid;
-  width: 300px;
+  width: 360px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 882px){
+    display: flex;
+
+  }
 
   .item {
+    @include text($fontFamily1,18px,$bgdColor1);
+    font-weight: bold;
     text-decoration: none;
-    /*:hover{
-      color: #d56d71;
-    }*/
   }
 }

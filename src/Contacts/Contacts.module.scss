@@ -1,38 +1,36 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
+
 .contactsBlock {
-  background-color: #1c0e0e;
+  background-color: $bgdColor2;
 
   .section {
     height: 150px;
-    background: linear-gradient(to bottom left, #fff, #fff 50%, transparent 50%, transparent);
+    background: linear-gradient(to bottom left, $bgdColor4, $bgdColor4 50%, transparent 50%, transparent);
   }
 
   .contactsContainer {
     width: 80%;
     margin: 0 auto;
     display: flex;
-
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-
     .title {
       margin: 0 0 30px;
-      font-size: 44px;
-      font-family: "Train One", cursive;
+      @include text($fontFamily2,44px,$textColor1);
+      letter-spacing: 10px;
       font-weight: 500;
       text-transform: uppercase;
-      letter-spacing: 10px;
-      color: #ffffff;
       position: relative;
     }
-
     .separator {
       position: relative;
       width: 12px;
       height: 12px;
       margin: 0px auto;
       border-radius: 50%;
-      background: #ffffff;
+      background: $bgdColor4;
 
       &::before {
         content: '';
@@ -41,7 +39,7 @@
         width: 70px;
         height: 2px;
         margin: 4px 0 0 -35px;
-        border: 1px solid #ffffff;
+        border: 1px solid $bgdColor4;
         border-left: none;
         border-right: none;
       }
@@ -53,7 +51,6 @@
       width: 250px;
       display: flex;
       flex-direction: row;
-
       align-items: center;
       text-align: center;
 
@@ -74,7 +71,7 @@
           font-size: 1.4285714286em;
           line-height: 70px;
           text-align: center;
-          color: #000;
+          color: $textColor2;
 
           &:before {
             content: '';
@@ -98,14 +95,13 @@
           font-size: 1.4285714286em;
           line-height: 70px;
           text-align: center;
-          color: #ffffff;
+          color: $textColor1;
         }
 
         .infoItem a {
           text-decoration: none;
           font-size: 14px;
-          color: #ffffff
-
+          color:$textColor1;
         }
       }
     }
@@ -117,31 +113,33 @@
     display: flex;
     flex-direction: column;
     border: none;
-
   }
-.row{
-  display: flex;
-  justify-content: space-between;
-}
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 870px) {
+      display: block;
+      margin: auto;
+    }
+  }
+
   .inputField input {
-    margin:0 10px;
+    margin: 0 10px;
     padding: 20px;
     width: 400px;
-    border-bottom-color: #ffffff;
+    border-bottom-color:$bgdColor4;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: double;
     border-bottom-width: thick;
-    background-color: #1c0e0e;
-    color: #fff;
-    font-size: 24px;
+    background-color: $bgdColor2;
+    color:$textColor1;
+    font-size: 18px;
     font-family: "Roboto Mono", serif;
     box-sizing: border-box;
     outline: none;
-
-
-
     &::before {
       content: '';
       position: absolute;
@@ -152,40 +150,39 @@
       margin: -6px 0 0;
       border-radius: 50%;
       transition: 0.3s;
-      background-color: #ffffff;
+      background-color: $bgdColor4;
     }
 
   }
 
   .textForm {
-    margin:0 10px;
-    padding-top: 20px;
-    width:100%;
-    border-bottom-color: #ffffff;
+    margin: 0 10px;
+    padding-top: 40px;
+    width: 100%;
+    border-bottom-color: $bgdColor4;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: double;
     border-bottom-width: thick;
-    background-color: #1c0e0e;
-    color: #fff;
-    font-size: 24px;
-    font-family: "Roboto Mono", serif;
+    background-color: $bgdColor2;
+    @include text($fontFamily1,18px,$textColor1);
     outline: none;
+    @media screen and (max-width: 870px) {
+      width: 400px;
+      margin: auto;
 
+    }
   }
-
 }
 
 .btn {
   margin: 30px 0px;
   font-weight: bold;
   font-stretch: normal;
-  font-size: 1em;
   line-height: 1;
-  font-family: "Roboto Mono", serif;
-  color: #ffffff;
-  border: 4px double #d56d71;
+  @include text($fontFamily1,18px,$textColor1);
+  border: 4px double $bgdColor3;
   border-radius: 40px;
   display: inline-block;
   vertical-align: middle;
@@ -198,13 +195,13 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #d56d71;
+    background-color: $bgdColor3;
   }
 }
 
 .section1 {
   height: 150px;
-  background: linear-gradient(to bottom left, transparent, transparent 50%, #ebe5d9 50%, #ebe5d9);
+  background: linear-gradient(to bottom left, transparent, transparent 50%, $bgdColor1 50%, $bgdColor1);
 }
 
 

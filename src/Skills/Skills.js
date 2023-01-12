@@ -20,7 +20,7 @@ import gIcon from "../assets/image/icons/git-svgrepo-com2.svg"
 
 const Skills = () => {
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id={'skills'}>
 
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <h2 className={style.title}>SKILLS</h2>

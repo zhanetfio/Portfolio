@@ -1,33 +1,44 @@
+@import "src/common/styles/variables";
+@import "src/common/styles/mixins";
+
 .mainBlock {
   min-height: 100vh;
-  background-color: #1c0e0e;
-
+  background-color: $bgdColor2;
+  /*@media screen and (max-width: 870px){
+    ;
+  }*/
   .intro {
     width: 360px;
-
     .name {
       font-family: 'Nothing You Could Do', cursive;
-      color: #d56d71;
+      color: $textColor3;
     }
-
     .prof {
       padding-top: 10px;
-      font-family: 'Train One', cursive;
-      font-size: 48px;
-      color: #fff;
+      @include text($fontFamily2,48px,$textColor1);
       letter-spacing: 10px;
     }
   }
-
   .photo {
+    position: relative;
     width: 300px;
-    height: 400px;
-    background-color: wheat;
+    height: 420px;
+    /* :after{
+       content:'';
+       //width: 300px;
+      // height:420px;
+       position: absolute;
+       border: 3px solid white;
+       transform: rotate(45deg);
+     }
+ */
+    // transform: rotate(45deg);
+    // border-radius: 150px;
+    // background-color: wheat;
   }
-
   .section {
     height: 150px;
-    background: linear-gradient(to bottom right, transparent, transparent 50%, #ebe5d9 50%, #ebe5d9);
+    background: linear-gradient(to bottom right, transparent, transparent 50%, $bgdColor1 50%,$bgdColor1);
   }
 }
 
