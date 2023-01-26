@@ -2,43 +2,42 @@
 @import "src/common/styles/mixins";
 
 .mainBlock {
+  padding-top: 100px;
   min-height: 100vh;
   background-color: $bgdColor2;
-  /*@media screen and (max-width: 870px){
-    ;
-  }*/
-  .intro {
-    width: 360px;
-    .name {
-      font-family: 'Nothing You Could Do', cursive;
-      color: $textColor3;
+
+  .container {
+    @include flex(row, space-around, center, wrap);
+    @include container();
+
+    .intro {
+      width: 400px;
+
+      .name {
+        font-family: 'Nothing You Could Do', cursive;
+        color: $textColor3;
+      }
+
+      .prof {
+        padding-top: 10px;
+        @include text($fontFamily2, 48px, $textColor1);
+        letter-spacing: 10px;
+        @media screen and (max-width: 450px) {
+          @include text($fontFamily2, 38px, $textColor1);
+        }
+      }
     }
-    .prof {
-      padding-top: 10px;
-      @include text($fontFamily2,48px,$textColor1);
-      letter-spacing: 10px;
+
+    .photo {
+      position: relative;
+      width: 300px;
+      height: 420px;
     }
   }
-  .photo {
-    position: relative;
-    width: 300px;
-    height: 420px;
-    /* :after{
-       content:'';
-       //width: 300px;
-      // height:420px;
-       position: absolute;
-       border: 3px solid white;
-       transform: rotate(45deg);
-     }
- */
-    // transform: rotate(45deg);
-    // border-radius: 150px;
-    // background-color: wheat;
-  }
+
   .section {
     height: 150px;
-    background: linear-gradient(to bottom right, transparent, transparent 50%, $bgdColor1 50%,$bgdColor1);
+    background: linear-gradient(to bottom right, transparent, transparent 50%, $bgdColor1 50%, $bgdColor1);
   }
 }
 

@@ -16,5 +16,5 @@ const Project = (props) => {
     )
 };
 
-/*'https://kirill2690.github.io/cards-front/'*/
+
 export default Project;

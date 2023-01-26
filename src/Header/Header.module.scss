@@ -1,15 +1,12 @@
 @import "src/common/styles/variables";
+@import "src/common/styles/mixins";
 
 .header {
   height: 80px;
   background-color:$bgdColor2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row,center,center,nowrap);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 3;
-  /*  @media screen and (max-width: 882px) {
-     width: auto;
-    }*/
+
 }

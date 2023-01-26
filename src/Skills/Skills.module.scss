@@ -6,9 +6,9 @@
     background-color: $bgdColor1;
 
     .skillsContainer {
-        align-items: center;
-        flex-direction: column;
-        justify-content: flex-start;
+        @include container();
+        @include flex(column,flex-start,center,wrap);
+
         .title {
             margin: 0 0 30px;
             @include text($fontFamily2,36px,#000);
@@ -35,9 +35,7 @@
         }
         .skills {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            @include flex(row,space-between, flex-start,wrap);
             @media screen and (max-width: 649px){
                 justify-content: center;
             }

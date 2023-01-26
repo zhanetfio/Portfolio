@@ -1,17 +1,19 @@
 @import "src/common/styles/variables";
 @import "src/common/styles/mixins";
+
 .nav {
   width: 360px;
-  display: flex;
-  justify-content: space-between;
-  @media screen and (max-width: 882px){
-    display: flex;
-
+  @include flex(row,space-between,center,no wrap);
+  @media screen and (max-width: 400px) {
+    justify-content: space-around;
   }
 
   .item {
     @include text($fontFamily1,18px,$bgdColor1);
     font-weight: bold;
     text-decoration: none;
+    @media screen and (max-width: 400px) {
+     font-size: 16px;
+    }
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Skills.module.scss';
-import styleContainer from './../common/styles/Container.module.css';
 import Skill from "./Skill/Skill";
 import jsIcon from "../assets/image/icons/js-svgrepo-com.svg";
 import cssIcon from "../assets/image/icons/css-fill-svgrepo-com.svg";
@@ -22,7 +21,7 @@ const Skills = () => {
     return (
         <div className={style.skillsBlock} id={'skills'}>
 
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+            <div className={style.skillsContainer}>
                 <h2 className={style.title}>SKILLS</h2>
                 <div className={style.separator}></div>
                 <div className={style.skills}>

@@ -10,20 +10,18 @@
   }
 
   .contactsContainer {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
+    @include container();
+    @include flex(column, flex-start, center, nowrap);
+
     .title {
       margin: 0 0 30px;
-      @include text($fontFamily2,44px,$textColor1);
+      @include text($fontFamily2, 44px, $textColor1);
       letter-spacing: 10px;
       font-weight: 500;
       text-transform: uppercase;
       position: relative;
     }
+
     .separator {
       position: relative;
       width: 12px;
@@ -49,9 +47,7 @@
       box-sizing: border-box;
       margin: 5px;
       width: 250px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include flex(row,center,center,nowrap);
       text-align: center;
 
       .infoBlockItem {
@@ -101,7 +97,7 @@
         .infoItem a {
           text-decoration: none;
           font-size: 14px;
-          color:$textColor1;
+          color: $textColor1;
         }
       }
     }
@@ -113,6 +109,13 @@
     display: flex;
     flex-direction: column;
     border: none;
+    @media screen and (max-width: 870px) {
+      width: 400px;
+      box-sizing:content-box;
+    }
+    @media screen and (max-width:485px) {
+      width: 320px;
+    }
   }
 
   .row {
@@ -122,24 +125,29 @@
       display: block;
       margin: auto;
     }
+    @media screen and (max-width:485px) {
+      width: 320px;
+    }
   }
 
   .inputField input {
     margin: 0 10px;
     padding: 20px;
     width: 400px;
-    border-bottom-color:$bgdColor4;
+    border-bottom-color: $bgdColor4;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: double;
     border-bottom-width: thick;
     background-color: $bgdColor2;
-    color:$textColor1;
-    font-size: 18px;
-    font-family: "Roboto Mono", serif;
+    @include text($fontFamily1, 18px, $textColor1);
     box-sizing: border-box;
     outline: none;
+    @media screen and (max-width:485px) {
+      width: 320px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -152,7 +160,6 @@
       transition: 0.3s;
       background-color: $bgdColor4;
     }
-
   }
 
   .textForm {
@@ -166,12 +173,10 @@
     border-bottom-style: double;
     border-bottom-width: thick;
     background-color: $bgdColor2;
-    @include text($fontFamily1,18px,$textColor1);
+    @include text($fontFamily1, 18px, $textColor1);
     outline: none;
-    @media screen and (max-width: 870px) {
-      width: 400px;
-      margin: auto;
-
+    @media screen and (max-width:485px) {
+      width: 320px;
     }
   }
 }
@@ -181,7 +186,7 @@
   font-weight: bold;
   font-stretch: normal;
   line-height: 1;
-  @include text($fontFamily1,18px,$textColor1);
+  @include text($fontFamily1, 18px, $textColor1);
   border: 4px double $bgdColor3;
   border-radius: 40px;
   display: inline-block;

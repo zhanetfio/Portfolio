@@ -5,3 +5,15 @@
   font-size: $fontSize ;
   color:$color ;
 }
+
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+@mixin flex($direction,$justify-content,$align-items,$flex-wrap){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items:$align-items ;
+  flex-wrap: $flex-wrap;
+}
