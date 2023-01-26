@@ -36,7 +36,7 @@
   }
 
   .section {
-    height: 150px;
+    height: $heightSection;
     background: linear-gradient(to bottom right, transparent, transparent 50%, $bgdColor1 50%, $bgdColor1);
   }
 }

@@ -31,6 +31,7 @@
                 border: 1px solid;
                 border-left: none;
                 border-right: none;
+
             }
         }
         .skills {
@@ -42,7 +43,7 @@
         }
     }
     .section{
-        height: 150px;
+        height: $heightSection;
         background: linear-gradient(to bottom right, transparent, transparent 50%, $bgdColor4 50%, $bgdColor4);
     }
 }

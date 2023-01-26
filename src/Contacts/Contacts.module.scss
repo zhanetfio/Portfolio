@@ -5,7 +5,7 @@
   background-color: $bgdColor2;
 
   .section {
-    height: 150px;
+    height: $heightSection;
     background: linear-gradient(to bottom left, $bgdColor4, $bgdColor4 50%, transparent 50%, transparent);
   }
 
@@ -53,7 +53,7 @@
       .infoBlockItem {
         width: 31.3333333333%;
         border-left-width: 0;
-        padding: 0 0%;
+        padding: 0 0;
         margin-left: 3%;
 
         .infoItem {
@@ -205,7 +205,7 @@
 }
 
 .section1 {
-  height: 150px;
+  height:$heightSection;
   background: linear-gradient(to bottom left, transparent, transparent 50%, $bgdColor1 50%, $bgdColor1);
 }
 
