@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b3ed3b83.css",
-    "main.js": "/Portfolio/static/js/main.f7b3932f.js",
+    "main.css": "/Portfolio/static/css/main.975d772a.css",
+    "main.js": "/Portfolio/static/js/main.ac588ef6.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/IMG_20221116_171414-removing&cutting.png": "/Portfolio/static/media/IMG_20221116_171414-removing&cutting.f1cbbed071655e3e9905.png",
+    "static/media/todo.png": "/Portfolio/static/media/todo.56c98dcd3d1ed44f88e4.png",
+    "static/media/cards.jpg": "/Portfolio/static/media/cards.c0e27dc3e3a282e63cce.jpg",
     "static/media/sass-svgrepo-com.svg": "/Portfolio/static/media/sass-svgrepo-com.f808c652ab198a0966110696f099ddb1.svg",
     "static/media/github-svgrepo-com.svg": "/Portfolio/static/media/github-svgrepo-com.d45d58329852cdd58b06049a1b07d6a1.svg",
     "static/media/react-svgrepo-com.svg": "/Portfolio/static/media/react-svgrepo-com.798ee36090b16d25a99e09c50387e11b.svg",
@@ -25,12 +28,12 @@
     "static/media/location-svgrepo-com .svg": "/Portfolio/static/media/location-svgrepo-com .dd1e2f5c67c3f02e47c60b7a50afb79a.svg",
     "static/media/material-ui-svgrepo-com.svg": "/Portfolio/static/media/material-ui-svgrepo-com.b213d65a125e98be1888984ea59227fe.svg",
     "static/media/email-svgrepo-com.svg": "/Portfolio/static/media/email-svgrepo-com.1111d8771ea04430f9e9d6c96db197ed.svg",
-    "main.b3ed3b83.css.map": "/Portfolio/static/css/main.b3ed3b83.css.map",
-    "main.f7b3932f.js.map": "/Portfolio/static/js/main.f7b3932f.js.map",
+    "main.975d772a.css.map": "/Portfolio/static/css/main.975d772a.css.map",
+    "main.ac588ef6.js.map": "/Portfolio/static/js/main.ac588ef6.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3ed3b83.css",
-    "static/js/main.f7b3932f.js"
+    "static/css/main.975d772a.css",
+    "static/js/main.ac588ef6.js"
   ]
 }
