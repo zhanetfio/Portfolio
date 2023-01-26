@@ -25,7 +25,7 @@ const Contacts = () => {
       const handleSubmit = (e) => {
           e.preventDefault()
 
-              axios.post('http://localhost:5000/sendMessage', {name,email,message})
+              axios.post('https://gmail-nodejs-jet.vercel.app/sendMessage', {name,email,message})
                   .then(res => {
                       console.log(res)
                   })
