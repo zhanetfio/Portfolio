@@ -1,14 +1,12 @@
 import React, {useState} from 'react';
 import style from './Contacts.module.scss'
-import loco from "../assets/image/icons/location-svgrepo-com .svg";
-import phone from "../assets/image/icons/phone-svgrepo-com .svg";
-import email from "../assets/image/icons/email-svgrepo-com.svg"
 import axios from "axios";
 
 const Contacts = () => {
       const [name, setName] = useState('')
       const [email, setEmail] = useState('')
       const [message, setMessage] = useState('')
+    const [sent,setSent] = useState(false);
 
       const nameHandler = (e) => {
           setName(e.target.value)
@@ -22,11 +20,16 @@ const Contacts = () => {
           setMessage(e.target.value)
       }
 
-      const handleSubmit = (e) => {
+      const handleSubmit = async (e) => {
           e.preventDefault()
-
-              axios.post('https://gmail-nodejs-jet.vercel.app/sendMessage', {name,email,message})
+          let data = {
+              name:name,
+              email:email,
+              message:message
+          }
+             await axios.post('https://gmail-nodejs-jet.vercel.app/sendMessage', data)
                   .then(res => {
+                      setSent(true)
                       console.log(res)
                   })
                   .catch(error=>{

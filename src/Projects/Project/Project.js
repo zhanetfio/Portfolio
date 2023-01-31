@@ -8,10 +8,12 @@ const Project = (props) => {
                     <a className={style.link}
                        href={props.href}
                        target={'_blank'}
-                       >View</a>
+                       rel="noreferrer"
+                       >Demo</a>
             </div>
             <div className={style.title}>{props.title}</div>
             <span className={style.description}>{props.description}</span>
+            <a href={props.gitHubLink} style={{color:'black'}}>GitHub Link</a>
         </div>
     )
 };
