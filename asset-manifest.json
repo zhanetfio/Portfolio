@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.fc126b6f.css",
-    "main.js": "/Portfolio/static/js/main.4d77099c.js",
+    "main.js": "/Portfolio/static/js/main.be09adff.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/IMG_20221116_171414-removing&cutting.png": "/Portfolio/static/media/IMG_20221116_171414-removing&cutting.f1cbbed071655e3e9905.png",
     "static/media/todo.png": "/Portfolio/static/media/todo.56c98dcd3d1ed44f88e4.png",
@@ -24,16 +24,13 @@
     "static/media/storybook-svgrepo-com.svg": "/Portfolio/static/media/storybook-svgrepo-com.5c86cae7eb1609f0314cb49f52c4a667.svg",
     "static/media/git-svgrepo-com2.svg": "/Portfolio/static/media/git-svgrepo-com2.d0b387178fc5beb9350725b0ff4881df.svg",
     "static/media/linkedin-with-circle-svgrepo-com.svg": "/Portfolio/static/media/linkedin-with-circle-svgrepo-com.af865535d7b0fe830d4969a671423a6e.svg",
-    "static/media/phone-svgrepo-com .svg": "/Portfolio/static/media/phone-svgrepo-com .25e2d216dcef11ef216e8c8ee5fbc517.svg",
-    "static/media/location-svgrepo-com .svg": "/Portfolio/static/media/location-svgrepo-com .dd1e2f5c67c3f02e47c60b7a50afb79a.svg",
     "static/media/material-ui-svgrepo-com.svg": "/Portfolio/static/media/material-ui-svgrepo-com.b213d65a125e98be1888984ea59227fe.svg",
-    "static/media/email-svgrepo-com.svg": "/Portfolio/static/media/email-svgrepo-com.1111d8771ea04430f9e9d6c96db197ed.svg",
     "main.fc126b6f.css.map": "/Portfolio/static/css/main.fc126b6f.css.map",
-    "main.4d77099c.js.map": "/Portfolio/static/js/main.4d77099c.js.map",
+    "main.be09adff.js.map": "/Portfolio/static/js/main.be09adff.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc126b6f.css",
-    "static/js/main.4d77099c.js"
+    "static/js/main.be09adff.js"
   ]
 }
