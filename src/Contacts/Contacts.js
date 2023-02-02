@@ -7,12 +7,10 @@ const Contacts = () => {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const [sent, setSent] = useState(false);
-    const [error,setError]=useState()
+
 
     const nameHandler = (e) => {
         setName(e.target.value)
-
-
     }
     const emailHandler = (e) => {
         setEmail(e.target.value)
@@ -23,25 +21,20 @@ const Contacts = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        let data = {
-            name: name,
-            email: email,
-            message: message
-        }
+
+        let data = {name, email, message}
+        setName('')
+        setEmail('')
+        setMessage('')
+
         await axios.post('https://gmail-nodejs-jet.vercel.app/sendMessage', data, {withCredentials: true})
             .then(res => {
                 setSent(true)
-                setEmail('')
-                setName('')
-                setMessage(' ')
-               alert('Your message has been sent')
             })
             .catch(error => {
-
             })
     }
     return (
-
         <div className={style.contactsBlock}>
             <div className={style.section}></div>
             <div className={` ${style.contactsContainer}`}>
