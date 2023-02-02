@@ -27,7 +27,7 @@ const Contacts = () => {
               email:email,
               message:message
           }
-             await axios.post('https://gmail-nodejs-jet.vercel.app/sendMessage', data)
+             await axios.post('https://gmail-nodejs-jet.vercel.app/sendMessage', data, {withCredentials: true})
                   .then(res => {
                       setSent(true)
                       console.log(res)
