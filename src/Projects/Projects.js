@@ -4,12 +4,14 @@ import Project from "./Project/Project";
 import todoImage from '../assets/image/images/todo.png'
 import cardsImage from '../assets/image/images/cards.jpg'
 import counterImage from '../assets/image/images/counter.png'
+import snetImage from '../assets/image/images/network.png'
 
 
 const Projects = () => {
 
     const todo = {backgroundImage: `url(${todoImage})`}
     const cards = {backgroundImage: `url(${cardsImage})`}
+    const snet =  {backgroundImage: `url(${snetImage})`}
     const counter =  {backgroundImage: `url(${counterImage})`}
 
     return (
@@ -23,6 +25,9 @@ const Projects = () => {
 
                     <Project href={'https://kirill2690.github.io/cards-front/'} style={cards} title='Learning Cards'
                              description={`Is a card bearing information, which is intended to be used as an aid in memorization. Flashcards are often used to memorize vocabulary, historical dates.`} gitHubLink={'https://github.com/Kirill2690/cards-front'}/>
+                    <Project href={'About\n' +
+                        'https://zhanetfio.github.io/SNet/'} style={snet} title='Social Network'
+                             description={'An online platform that is used for communication, dating, creating social relationships between people who have similar interests or offline connections, as well as for entertainment (music, movies) and work.'} gitHubLink={'https://github.com/zhanetfio/SNet'}/>
                     <Project href={'https://counter-delta-cyan.vercel.app/'} style={counter} title='Counter' description={`Counter with simple settings.`} gitHubLink={'https://github.com/zhanetfio/Counter'}  />
 
                 </div>
